@@ -5,7 +5,6 @@ const slides = document.getElementsByClassName("slide");
 
 // Functions
 function nextslide() {
-    console.log(currentslide);
 
     // Add the slide-visible class to show a slide
     slides[currentslide].classList.remove("slide-visible");
