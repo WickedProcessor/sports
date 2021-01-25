@@ -1,0 +1,168 @@
+/* TO USE NOTO SANS:
+font-family: 'Noto Sans', sans-serif;
+
+TO USE Black Ops One:
+font-family: 'Black Ops One', cursive;
+
+TO USE Saira Extra Condensed:
+font-family: 'Saira Extra Condensed', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+        /* Hiding the overflow hides the navbar */
+        overflow: hidden;
+        font-family: 'Noto Sans', sans-serif;
+}
+
+/* Headings */
+.title {
+    text-decoration: solid underline white 0.1rem;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+/* Content */
+.text {
+    color: #DDDDDD;
+    font-size: 18px;
+    text-align: left;
+}
+
+section > .text {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+
+/* The navbar */
+#top-nav {
+    width: 100vw;
+    height: 8vh;
+    background: #164A41;
+
+}
+
+#link-container {
+    color: white;
+    background: #4D774E;
+    background: #164A41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.8rem;
+    text-decoration: solid underline 0.15rem;
+    color: white;
+}
+
+.link {
+    transition: color 0.18s;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover, .welcome:hover {
+    color: lime;
+}
+
+/* More efficient that rewriting for both elements */
+#left, #middle, #right {
+    background: #3C663D;
+    border: solid 3px #1D1D1D;
+    border-radius: 4px;
+}
+
+.centred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-main {
+  padding: 8px;
+    text-align: center;
+    background: #164A41;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* The left column */
+#left {
+    width: 40vw;
+    height: 70vh;
+    grid-area: right;
+}
+
+/* The Right column */
+#right {
+    width: 44vw;
+    grid-area: right;
+}
+
+/* Each container which holds an image and caption */
+.slide {
+    height: 52vh;
+    display: none;
+}
+
+/* This is for the visible slide */
+.visible {
+    display: block;
+}
+
+/* This is shown above the slide, it's static */
+.slide-header{
+    height: 3vh;
+    margin-bottom: 1vh;
+}
+
+.slide-image {
+    width: 44vw;
+    height: 48vh;
+    padding: 5px;
+}
+
+/* The caption for the slide */
+.slide-footer {
+    height: 2vh;
+    text-align: center;
+}
+
+/* The about website */
+#about-main {
+  padding: 8px;
+    text-align: center;
+    background: #416B93;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle {
+    width: 70vw;
+    height: 70vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    text-align: left;
+}

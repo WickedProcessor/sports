@@ -4,18 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site Maintenance</title>
 
-    <style>
-        h1, h3{
-            text-align: center;
-        }
-    </style>
+    <title>Extreme Sports</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- IMPORT FONTS -->
+    <!-- Using the hamburger icon from font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- TEXT FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- NAVBAR FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <main>
-        <h1><u>Site Maintenance</u></h1>
-        <h3>This site is under maintenance. Check back at 20:30 (UTC +0)</h3>
-    </main>
+    <!-- The navbar at the top -->
+    <nav id="top-nav">
+        <div id="link-container">
+            <a class="text link" href="about.html">About Us</a>
+            <a class="text link" href="todo.html">Skydiving</a>
+            <a href="index.html" class="welcome">Extreme Sports</a>
+            <a class="text link" href="todo.html">Scuba Diving</a>
+            <a class="text link" href="todo.html">Bungee Jumping</a>
+        </div>
+    </nav>
+
+    <div id="index-main">
+
+        <section id="left">
+            <h1 class="title">Overview</h1>
+            <p class="text">
+                Extreme sports offers of the most exquisite experiences. <br>
+                Our staff are available to help you feel the rush of out activites. <br>
+                <br>
+                Our team works hard to ensure that you are safe, safety always remains as our top priority. <br>
+                We thoroughly test all equipment before use and replace gear after 300 uses.<br>
+                <br>
+                Check if you are elegible before booking; All participants need to meet the  15 stone weight requirement. <br>
+                Other health issues may also prohibit you from taking part, please check in advance. <br>
+            </p>
+        </section>
+
+        <section id="right">
+                <h1 class="title slide-header">Here are some of our activities:</h1>
+
+                <div class="slide visible">
+                    <img class="slide-image" src="images/bungee-jumping.jpg" alt="Go bungee jumping">
+                    <h3 class="text slide-footer">Go bungee jumping</h3>
+                </div>
+
+                <div class="slide">
+                    <img class="slide-image" src="images/scuba-diving.jpg" alt="Go scuba diving">
+                    <h3 class="text slide-footer">Go scuba diving</h3>
+                </div>
+
+                <div class="slide">
+                    <img class="slide-image" src="images/skydiving.jpg" alt="Go skydiving">
+                    <h3 class="text slide-footer">Go skydiving</h3>
+                </div>
+        </section>
+
+    </div>
+
+    <script src="js/slide.js"></script>
 </body>
 </html>
